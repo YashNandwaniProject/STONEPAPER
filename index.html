@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - HOMERUN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: '#F8F7EC',
+              dark: '#181817',
+              'brand-green': '#2D5A36',
+              'brand-blue': '#CDF0FF',
+              'brand-lavender': '#EDD4F8',
+              'brand-orange': '#E56138',
+              'brand-purple': '#9D8DF1',
+              'footer-bg': '#FFF6E5',
+              'footer-text': '#120011'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Syne', 'sans-serif'],
+            },
+            animation: {
+              'spin-slow': 'spin 12s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F8F7EC;
+        color: #181817;
+        overflow-x: hidden;
+      }
+      ::selection {
+        background-color: #E56138;
+        color: #F8F7EC;
+      }
+      /* Hide scrollbar for smooth look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F8F7EC;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #181817;
+        border-radius: 4px;
+      }
+      
+      .clip-circle-closed {
+        clip-path: circle(0px at calc(100% - 48px) 48px);
+      }
+      .clip-circle-open {
+        clip-path: circle(150% at calc(100% - 48px) 48px);
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-C_7hrXtG.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
